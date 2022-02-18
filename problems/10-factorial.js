@@ -16,9 +16,18 @@ factorial(3); // 6
 factorial(5); // 120
 ***********************************************************************/
 
-function factorial(num) {
-  // Your code here
-}
+  function factorial(num) {
+    // Your code here
+    if (num === 1){
+      return 1;
+    }
+    return num * factorial(num - 1);
+  }
+    
+  console.log(factorial(1)); // 1
+  console.log(factorial(3)); // 6
+  console.log(factorial(5)); // 120
+
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = factorial;
