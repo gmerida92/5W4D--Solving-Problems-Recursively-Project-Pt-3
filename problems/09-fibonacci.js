@@ -20,9 +20,37 @@ fibonacci(10); // 55
 ***********************************************************************/
 
 function fibonacci(n) {
-  // Your code here
+  if ( n === 0)
+  {
+    return 0;
+  }
+
+  if (n === 1 || n === 2)
+  {
+    return 1;
+  }
+
+  console.log(n);
+  return fibonacci(n-1) + fibonacci(n-2)
+
+
+
+
+  // if (counter !== n)
+
+  // if ( counter === n )
+  // {
+  //   //starting from 1 needs to recurse and add
+  //   // 1 -> n = 1
+  //   // 1 + 0 = 1 -> n = 2
+  //   // 1 + 1 = 2 -> n = 3
+  //   // 2 + 1 = 3 -> n = 4
+  //   return fibNum;
+  // }
+
 }
-  
+
+console.log(fibonacci(10)); // 55
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
-  
