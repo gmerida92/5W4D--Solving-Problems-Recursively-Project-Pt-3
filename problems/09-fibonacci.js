@@ -19,6 +19,8 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
+debugger
+
 function fibonacci(n) {
   if ( n === 0)
   {
@@ -30,7 +32,7 @@ function fibonacci(n) {
     return 1;
   }
 
-  console.log(n);
+  // console.log(n);
   return fibonacci(n-1) + fibonacci(n-2)
 
 
@@ -50,7 +52,7 @@ function fibonacci(n) {
 
 }
 
-// console.log(fibonacci(10)); // 55
+console.log(fibonacci(10)); // 55
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
-module.exports = fibonacci;
+// module.exports = fibonacci;

@@ -11,9 +11,53 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
 function flatten(arr) {
-  // Your code here
+  if (arr === [])
+  {
+    return [];
+  }
+
+  const arr2 = [];
+
+  arr.forEach((el)=>{
+    if(!Array.isArray(el)){
+      arr2.push(el)
+    }
+    else{
+      return arr2.push( ...flatten(el) );
+    }
+    // return arr2;
+  })
+
+  return arr2;
+
+  // console.log(arr[0]);
+  // console.log(arr.slice(1));
+
+// if (arr.length > 0)
+// {
+//   // return arr.flat(flatten(arr.slice(1)));
+//   console.log(flatten(arr.slice(1)));
+//   return flatten(arr.splice(1,1))
+
+// }
+
+
+
+// return arr;
+  // Want to slice up the initial array
+  // remove first element of the array
+  // flatten
+  // console.log(arr[0]);
+  // console.log(flatten(arr.slice(1)));
+  // if(arr.length > 1)
+  // {
+  //   return flatten(arr.slice(1));
+  // }
+
+
 }
-  
+
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3];
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
-  
