@@ -50,7 +50,7 @@ function fibonacci(n) {
 
 }
 
-console.log(fibonacci(10)); // 55
+// console.log(fibonacci(10)); // 55
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
